@@ -3,7 +3,7 @@ import paho.mqtt.client as mqtt
 from health_records import save_health_record, analyze_record
 BROKER = "localhost"
 PORT = 1883
-TOPIC = "#"
+TOPIC = "health/watch1/metrics"
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
